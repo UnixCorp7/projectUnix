@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitlife - início</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <img src="img/image.png" alt="fitlife logo" width="80">
+        <div>
+          <a href="inicio.html" style="text-decoration: none;">
+          <h1><span style="color: blue;">FIT</span>LIFE<span>.com</span></h1></a>
+        </div>
+            <nav>
+             
+              <a href="fiqueemforma.html">Fique em forma</a> 
+              <a href="comamelhor.html">Coma melhor</a>
+              <a href="gerenciarpeso.html">Gerenciar peso</a>
+              <a href="aviso.html">Viva bem</a>
+              <a href="aviso.html">Mais</a>
+            </nav>
+
+            <div id="formulario">
+              <form class="search-form">
+                <div class="search-container">
+                  <input type="text" placeholder="Pesquisar..." class="search-bar">
+                  <button class="search-button">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" alt="Search icon">
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <ul class="wrapper">
+              <li class="icon whatsapp">
+                <a href="https://www.whatsapp.com/channel/0029VayM197002T9XJByK326" style="color: black;"><span><i class="fab fa-whatsapp"></i></span></a>
+              </li>
+              <li class="icon youtube">
+                <span><i class="fab fa-youtube"></i></span>
+              </li>
+             <!-- <li class="icon tiktok">
+                <span><i class="fab fa-tiktok"></i></span>
+              </li>-->
+              <li class="icon instagram">
+                <span><i class="fab fa-instagram"></i></span>
+              </li>
+            </ul>
+
+    </header>
+    
+    <div id="welcomeModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Bem-vindo!</h2>
+          <p>Estamos felizes em tê-lo aqui. Clique em "OK" para continuar navegando.</p>
+          <button id="okButton">OK</button>
+      </div>
+  </div>
+     <!-- Banner de boas-vindas -->
+     <div class="main">
+      <div class="left">
+        <h1>Olá, seja bem-vindo(a)!</h1>
+        <p>
+          Pronto para transformar sua vida hoje?<br> Transforme seu potencial em resultados – sua jornada fitness começa aqui!</p>
+      </div>
+    </div>
+    <!-- Resumo do progresso do usuário -->
+    <section class="progress-summary">
+      
+        <div class="progress-item">
+            <h2>Contador de Água</h2>
+            <p id="copos">0 / 8 copos</p>
+            <div id="circle">
+                <div id="fill" style="height: 0;"></div>
+            </div>
+            <button onclick="atualizar()">Atualizar</button>
+        </div>
+    
+     <!--  <div class="progress-item">
+         <h2>Meta de Macronutrientes</h2>
+          <p id="copos">30 min de exercício</p>
+          <div id="circle">
+            <div id="fill" style="height: 0;"></div>
+          </div>
+          <button onclick="atualizar()">Adicionar alimento</button>
+      </div>-->
+
+      <div class="progress-item">
+        <h2>Contador de Macronutrientes</h2>
+        <p id="macronutrientes">Proteínas: 0g | Carboidratos: 0g | Gorduras: 0g</p>
+        <div id="circle">
+            <div id="fill" style="height: 0
+            ;"></div>
+        </div>
+        <button onclick="redirecionar()">Adicionar Alimentos</button>
+    </div>
+    
+  </section>
+
+    <div class="titulo1"><h2>Treinos em Destaque</h2>
+      <p>Confira agora os nossos treinos mais populares!</p>
+    </div>
+
+      <!--<div class="slider" x-data="{start: true, end: false}" style="padding-top: 150px;">
+        <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+          <div class="slider__item">
+            <img class="slider__image" src="/img/dragon-scales.svg" alt="Image">
+            <div class="slider__info">
+              <h2>Card 1</h2>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" src="/img/flat-mountains.png" alt="Image">
+            <div class="slider__info">
+              <h2>Card 2</h2>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" src="/img/pattern_japanese-pattern-2_1_2_0-0_0_1__ffffff00_000000.png" alt="Image">
+            <div class="slider__info">
+              <h2>Card 3</h2>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" src="/img/pattern_japanese-pattern-3_1_5_0-0_0_1__2a2b37_c5c4ca.png" alt="Image">
+            <div class="slider__info">
+              <h2>Card 4</h2>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" src="/img/dragon-scales (3).svg" alt="Image">
+            <div class="slider__info">
+              <h2>Card 5</h2>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" src="/img/liquid-cheese.png" alt="Image">
+            <div class="slider__info">
+              <h2>Card 6</h2>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" src="/img/pattern_circles-1_1_16_0-0_0_1__2a2b37_ffeba8_ffeba8.png" alt="Image">
+            <div class="slider__info">
+              <h2>Card 7</h2>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" src="/img/dragon-scales (2).svg" alt="Image">
+            <div class="slider__info">
+              <h2>Card 8</h2>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" src="/img/protruding-squares.png" alt="Image">
+            <div class="slider__info">
+              <h2>Card 9</h2>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" src="/img/radiant-gradient.png" alt="Image">
+            <div class="slider__info">
+              <h2>Card 10</h2>
+            </div>
+          </div>
+        </div>
+        <div class="slider__nav" style="display: flex;justify-content: center;">
+          <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
+          <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js"></script> -->
+    <section class="container">
+      <div class="card-grid">
+        <a href="aviso.html" class="card">
+          <div class="background" style="background-image: url(img/perdadepeso.jpg)"></div>
+          <div class="content">
+            <p class="category"></p>
+            <h3 class="heading">Perda de peso</h3>
+          </div>
+        </a>
+        <a href="aviso.html" class="card">
+          <div class="background" style="background-image: url(img/IMC.jpg);"></div>
+          <div class="content">
+            <p class="category"></p>
+            <h3 class="heading">Força e hipertrofia</h3>
+          </div>
+        </a>
+        <a href="aviso.html" class="card">
+          <div class="background" style="background-image: url(img/pexels-cottonbro-4761352.jpg);"></div>
+          <div class="content">
+            <p class="category"></p>
+            <h3 class="heading">Treinos rápidos de 20 minutos</h3>
+          </div>
+        </a>
+        <a href="aviso.html" class="card">
+          <div class="background" style="background-image: url(img/ganhodepeso.jpg);"></div>
+          <div class="content">
+            <p class="category"></p>
+            <h3 class="heading">Treino funcional</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+  <footer>
+      <p>&copy; 2024 FitLife. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- <div class="footer__bar">
+        © 2024 UnixCorp. Todos os direitos reservados.
+      </div>  -->
+    </body>
+
+    <script>
+      window.onload = function() {
+          // Verifica se a mensagem de boas-vindas já foi exibida
+          if (!localStorage.getItem('welcomeMessageDisplayed')) {
+              document.getElementById('welcomeModal').style.display = 'block'; // Exibe o modal
+          }
+      };
+
+      // Fecha o modal quando o usuário clica no botão "OK"
+      document.getElementById('okButton').onclick = function() {
+          document.getElementById('welcomeModal').style.display = 'none'; // Oculta o modal
+          localStorage.setItem('welcomeMessageDisplayed', 'true'); // Marca que a mensagem foi exibida
+      };
+
+      // Fecha o modal quando o usuário clica no "x"
+      document.querySelector('.close').onclick = function() {
+          document.getElementById('welcomeModal').style.display = 'none'; // Oculta o modal
+          localStorage.setItem('welcomeMessageDisplayed', 'true'); // Marca que a mensagem foi exibida
+      };
+
+      // Fecha o modal se o usuário clicar fora dele
+      window.onclick = function(event) {
+          if (event.target == document.getElementById('welcomeModal')) {
+              document.getElementById('welcomeModal').style.display = 'none'; // Oculta o modal
+              localStorage.setItem('welcomeMessageDisplayed', 'true'); // Marca que a mensagem foi exibida
+          }
+      };
+
+      
+        let quantidade = 0; // Variável para armazenar a quantidade de água
+    
+        function atualizar() {
+            if (quantidade < 8) { // Limite de 8 copos
+                quantidade += 1; // Aumenta a quantidade em 1 copo
+                const fill = document.getElementById('fill');
+                fill.style.height = (quantidade * 12.5) + '%'; // Atualiza a altura do preenchimento (12.5% por copo)
+                document.getElementById('copos').innerText = quantidade + " / 8 copos"; // Atualiza o texto do contador
+            } else {
+                alert("Você já atingiu a capacidade máxima!");
+            }
+        }
+    
+  </script>
+</html>

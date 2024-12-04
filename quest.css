@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap");
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: League Spartan, sans-serif;
+   
+ }
+
+.questionnaire { 
+    /*max-width: 100%; */
+
+    /* margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    
+    flex-direction: row;
+    justify-content: center;
+    align-itens: center;*/
+
+    width: 100vw;
+height: 100vh;
+background: #6C7A89;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+    
+
+
+    
+}
+
+.box-form  {
+    width: 600px;
+    height: 400px;
+    color: #fff;
+    background-image: linear-gradient(to left, #2575fc 0%, rgb(49, 66, 219));
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.questionnaire h2 {
+    color: white;
+    font-size: 42px;
+
+}
+
+input {
+    border: solid 1.5px #9e9e9e;
+ border-radius: 15px;
+ background: none;
+ padding: 7px 45px;
+ font-size: 1rem;
+ color: #f5f5f5;
+ transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+label {
+    color: #FFF;
+    padding: 5px;
+    font-size: 23px;
+}
+
+button{
+  border: none;
+  border-radius: 15px;
+  padding: 8px 12px;
+  font-family: League spartan;
+  font-size: 20px;
+}
+
+
+
+.hidden {
+     display: none; 
+     border: none;
+     border-radius: 15px;
+     padding: 8px 12px;
+    }
+
+    #interest {
+        border: none;
+        border-radius: 15px;
+        padding: 8px 15px;
+    }

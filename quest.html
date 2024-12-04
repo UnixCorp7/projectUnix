@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário Inicial</title>
+    <link rel="stylesheet" href="quest.css">
+</head>
+<body>
+
+<div class="questionnaire" id="questionnaire">
+    <div class="box-form">
+    <h2>Bem-vindo ao nosso site!</h2>
+    <form id="form">
+        <div id="question1">
+            <label>Qual é o seu nome?</label><br><br>
+            <input type="text" id="name" required><br><br><br>
+            <button type="button" onclick="nextQuestion(1)">Próximo</button>
+        </div>
+
+        <div id="question2" class="hidden">
+            <label>Qual é a sua idade?</label><br><br>
+            <input type="number" id="age" required><br><br><br>
+            <button type="button" onclick="nextQuestion(2)">Próximo</button>
+        </div>
+
+        <div id="question3" class="hidden">
+            <label>Qual é o seu interesse principal?</label><br><br>
+            <select id="interest" required>
+                <option value="">Selecione...</option>
+                <option value="tecnologia">valor1</option>
+                <option value="saude">valor2</option>
+                <option value="educacao">valor3</option>
+            </select><br><br><br>
+            <button type="button" onclick="submitForm()">Enviar</button>
+        </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    let currentQuestion = 1;
+
+    function nextQuestion(questionNumber) {
+        document.getElementById(`question${questionNumber}`).classList.add('hidden');
+        currentQuestion++;
+        document.getElementById(`question${currentQuestion}`).classList.remove('hidden');
+    }
+
+    function submitForm() {
+        const name = document.getElementById('name').value;
+        const age = document.getElementById('age').value;
+        const interest = document.getElementById('interest').value;
+
+        // Aqui você pode processar os dados como quiser (enviar para um servidor, etc.)
+        console.log({ name, age, interest });
+
+        // Redirecionar para a tela inicial do seu site
+        window.location.href = 'inicio.html'; // Substitua pelo URL da sua tela inicial
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perda de peso</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap");
+
+body {
+    font-family: League Spartan, sans-serif;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    align-items: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #eceef3;
+}
+
+header h1 {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 6px 14px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    border-radius: 0px;
+    transition: 0.5s ease;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 37, 212);
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.search-bar {
+    width: 300px;
+    padding: 6px;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid #ffffff;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.search-button {
+    padding: 3px;
+    border: none;
+    background-color: rgb(241, 241, 241);
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/image.png" alt="fitlife logo" width="80">
+        <div>
+          <a href="inicio.html" style="text-decoration: none;">
+          <h1><span style="color: blue;">FIT</span>LIFE<span>.com</span></h1></a>
+        </div>
+        <div></div>
+            <nav>
+             
+              <a href="fiqueemforma.html"></a> 
+              <a href="comamelhor.html"></a>
+              <a href="gerenciarpeso.html"></a>
+              <a href="#client"></a>
+              <a href="#blog"></a>
+            </nav>
+
+            <div id="formulario">
+              <form class="search-form">
+                <div class="search-container">
+                  <input type="text" placeholder="Pesquisar..." class="search-bar">
+                  <button class="search-button">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" alt="Search icon">
+                  </button>
+                </div>
+              </form>
+            </div>
+
+    </header>
+</body>
+</html>

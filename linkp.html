@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap");
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: League Spartan, sans-serif;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgb(65, 98, 119);
+            color: aliceblue;
+            
+        }
+
+        img {
+            max-width: 150px;
+            text-align: center;
+            align-items: center;
+            margin: 30px;
+            padding: 0px;
+            border-radius: 20pc;
+            box-shadow: 2px 2px 2px 1px rgba(27, 27, 27, 0.2);
+        }
+       
+        button {
+            background-color: #07344a;
+            border:none;
+            padding: 10px 15px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 2px 1px rgba(27, 27, 27, 0.2);
+            transition: ease 0.5s;
+        }
+
+        button:hover {
+          background-color: #1797d6;
+        }
+
+        button a {
+            text-decoration: none;
+            color: white;
+            
+
+        }
+
+        footer a {
+            text-decoration: none;
+            color: rgb(179, 218, 245);
+        }
+        
+        .wrapper {
+            display: inline-flex;
+            list-style: none;
+            margin-left: -40px;
+          }
+          
+          .wrapper .icon {
+            position: relative;
+            background: #c4daf3;
+            color: black;
+            border-radius:10px;
+            padding: 15px;
+            margin: 10px;
+            width: 10px;
+            height: 10px;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          }
+          
+          .wrapper .tooltip {
+            position: absolute;
+            top: 0;
+            font-size: 14px;
+            background: #ffffff;
+            color: #090909;
+            padding: 5px 8px;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          }
+          
+          .wrapper .tooltip::before {
+            position: absolute;
+            content: "";
+            height: 8px;
+            width: 8px;
+            background: #ffffff;
+            bottom: -3px;
+            left: 50%;
+            transform: translate(-50%) rotate(45deg);
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          }
+          
+          .wrapper .icon:hover .tooltip {
+            top: -45px;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transition: ease  0.5s;
+          }
+          
+          .wrapper .icon:hover span,
+          .wrapper .icon:hover .tooltip {
+            text-shadow: 0px -1px 0px rgba(4, 4, 4, 0.1);
+          }
+          
+          .wrapper .whatsapp:hover,
+          .wrapper .whatsapp:hover .tooltip,
+          .wrapper .whatsapp:hover .tooltip::before {
+            background: #18f22a;
+            color: #ffffff;
+            transition: ease  0.5s;
+          }
+          
+          .wrapper .tiktok:hover,
+          .wrapper .tiktok:hover .tooltip,
+          .wrapper .tiktok:hover .tooltip::before {
+            background: #000000;
+            color: #ffffff;
+            transition: ease  0.5s;
+          }
+          
+          .wrapper .instagram:hover,
+          .wrapper .instagram:hover .tooltip,
+          .wrapper .instagram:hover .tooltip::before {
+            background: #7a21b6;
+            color: #ffffff;
+            transition: ease  0.5s;
+          }
+          
+          .wrapper .youtube:hover,
+          .wrapper .youtube:hover .tooltip,
+          .wrapper .youtube:hover .tooltip::before {
+            background: #CD201F;
+            color: #ffffff;
+            transition: ease  0.5s;
+          }
+
+         
+          
+    </style>
+</head>
+<body>
+    <img src="assets/Fitlife (2).png" alt="logo fitlife">
+    <H1>Entre agora no nosso site!!!</H1>
+    <button><a href="quest.html">Clique aqui</a></button>
+    <h2>Veja também</h2>
+    <ul class="wrapper">
+        <li class="icon whatsapp">
+          <a href="https://www.whatsapp.com/channel/0029VayM197002T9XJByK326" style="color: black;"><span><i class="fab fa-whatsapp"></i></span></a>
+        </li>
+        <li class="icon youtube">
+          <span><i class="fab fa-youtube"></i></span>
+        </li>
+       <!-- <li class="icon tiktok">
+          <span><i class="fab fa-tiktok"></i></span>
+        </li>-->
+        <li class="icon instagram">
+          <span><i class="fab fa-instagram"></i></span>
+        </li>
+      </ul>
+    <footer>
+        <p>_____________________________________________________________________________</p>
+        <a href="">Termos de uso</a><br><br>
+        <a href="">Política de privacidade</a>
+        
+    </footer>
+</body>
+</html>

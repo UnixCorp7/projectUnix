@@ -1,0 +1,388 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/Black White Minimalist SImple Monogram Typography Logo_20241007_193743_0001.png">
+    <title>Unix Corp - página inicial</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="index.html"><img src="assets/Black White Minimalist SImple Monogram Typography Logo_20241007_193743_0001.png" alt="logo" /></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#produto">Produto</a></li>
+          <li><a href="#blog">Blogs</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header" id="header">
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h1>Bem vindo ao <SPAN style="color: #4169E1;">UNIX</SPAN> CORP</h1>
+          <h2>Uma empresa inovadora, focada no desenvolvimento de aplicativos que facilitam o dia-a-dia das pessoas.</h2>
+          <p>Aqui, você encontrará uma ampla gama de recursos para ajudar no seu dia-a-dia</p>
+          <div class="header__btn">
+            <button class="btn btn__primary"><a href="linkp.html">CONFIRA O NOSSO NOVO PRODUTO!</a></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__header">
+        <h2 class="section__header">NOSSOS OBJETIVOS</h2>
+        <p class="section__description">
+          Nossa missão é inspirar e apoiar indivíduos na realização de seus
+          objetivos de saúde e bem-estar, independentemente do seu nível de condicionamento físico. Aqui temos 3 principais objetivos da nossa empresa:
+        </p>
+      </div>
+      <div class="about__grid">
+        <div class="about__card">
+          <h4>INOVAR</h4>
+          <p>
+           Abraçar as mudanças e o mundo TEC! Somos um novo conceito de fitness, buscando viabilizar a prática de atividades físicas por meios virtuais.
+          </p>
+        </div>
+        <div class="about__card">
+          <h4>INDIVIDUALIZAR</h4>
+          <p>
+            Temos como objetivo tratar cada cliente com individualidade. Somos uma empresa singular e única assim como nossos usufruidores.
+          </p>
+        </div>
+        <div class="about__card">
+          <h4>EXPANDIR</h4>
+          <p>
+            
+            Buscamos expandir o conceito de fitness e tecnologia, acessibilizando e abrindo as portas do mundo das práticas corporais.
+          </p>
+        </div>
+      </div>
+    </section>
+
+<!--
+    <section class="section__container trainer__container" id="trainer">
+      <h2 class="section__header">NOSSA EQUIPE</h2>
+      <div class="trainer__grid">
+        <div class="trainer__card">
+          <img src="assets/trainer-1.jpg" alt="trainer" />
+          <h4>BEATRIZ RODRIGUES</h4>
+          <p>Body Builder Coach</p>
+          <div class="trainer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-whatsapp-fill"></i></a>
+            <a href="https://www.instagram.com/triixbia/"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+        <div class="trainer__card">
+          <img src="assets/ed.png" alt="trainer" />
+          <h4>EDSON GOMES</h4>
+          <p>Cardio Coach</p>
+          <div class="trainer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-whatsapp-fill"></i></a>
+            <a href="https://www.instagram.com/whotf.ed/"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+        <div class="trainer__card">
+          <img src="assets/trainer-3.jpg" alt="trainer" />
+          <h4>EVELLINE EDUARDA</h4>
+          <p>Fitness Coach</p>
+          <div class="trainer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-whatsapp-fill"></i></a>
+            <a href="https://www.instagram.com/evellinexavier/"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+        <div class="trainer__card">
+          <img src="assets/Design sem nome (1).png" alt="trainer" />
+          <h4>FLAVIO LOPES</h4>
+          <p>Crossfit Coach</p>
+          <div class="trainer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-whatsapp-fill"></i></a>
+            <a href="https://www.instagram.com/flaavinbjj/"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+        <div class="trainer__card">
+          <img src="assets/trainer-1.jpg" alt="trainer" />
+          <h4>JAKELLYNE MARIA</h4>
+          <p>Body Builder Coach</p>
+          <div class="trainer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-whatsapp-fill"></i></a>
+            <a href="https://www.instagram.com/jakellynee.maria/"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+        <div class="trainer__card">
+          <img src="assets/trainer-2.jpg" alt="trainer" />
+          <h4>JOSÉ VITOR</h4>
+          <p>Cardio Coach</p>
+          <div class="trainer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-whatsapp-fill"></i></a>
+            <a href="https://www.instagram.com/vitor.santtos.0"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+        <div class="trainer__card">
+          <img src="assets/trainer-3.jpg" alt="trainer" />
+          <h4>MARIA ALICE</h4>
+          <p>Fitness Coach</p>
+          <div class="trainer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-whatsapp-fill"></i></a>
+            <a href="https://www.instagram.com/mariaalicx/"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+        <div class="trainer__card">
+          <img src="assets/oreia.png" alt="trainer" />
+          <h4>ROBERTO AMORIM</h4>
+          <p>Crossfit Coach</p>
+          <div class="trainer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-whatsapp-fill"></i></a>
+            <a href="https://www.instagram.com/robertoamoriml/"><i class="ri-instagram-fill"></i></a>
+          </div>
+          <div class="trainer__card">
+            <img src="assets/trainer-1.jpg" alt="trainer" />
+            <h4>SAMUEL HYTALO</h4>
+            <p>Body Builder Coach</p>
+            <div class="trainer__socials">
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+              <a href="#"><i class="ri-whatsapp-fill"></i></a>
+              <a href="https://www.instagram.com/triixbia/"><i class="ri-instagram-fill"></i></a>
+            </div>
+        </div>-->
+       
+      </div>
+    </section>
+
+    <section class="membership" id="produto">
+      <div class="section__container membership__container">
+        <h2 class="section__header">NOSSO PRODUTO</h2>
+        <div class="membership__grid">
+          <div class="membership__card">
+            <h4>FITLIFE.com</h4>
+            <ul>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                <strong>Treino personalizado:</strong>Planos de treinos adaptados para ganho de massa, emagrecimento ou definição.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                <strong>Alimentação saudável:</strong>Dietas balanceadas para cada meta fitness, incluindo opções veganas e sem glúten.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                <strong>Monitoramento de progresso:</strong>Acompanhamento de peso, IMC e desempenho nos exercícios.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                <strong>Desafios e motivação:</strong> Desafios semanais com recompensas e frases motivacionais.
+              </li>
+              <li>
+                <span><i class="ri-check-line"></i></span>
+                <strong>Bem-estar e recuperação:</strong>Dicas de alongamento, meditação e sono para uma recuperação eficaz.
+              </li>
+            </ul>
+            <a href="linkp.html">
+            <button class="btn btn__primary">ACESSE AGORA</button></a>
+          </div>
+      </div>
+    </section>
+   <!-- <section class="section__container client__container" id="client">
+      <h2 class="section__header">OUR TESTIMONIALS</h2>
+     
+      <div class="swiper">
+      
+        <div class="swiper-wrapper">
+         
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/client-1.jpg" alt="client" />
+              <div><i class="ri-double-quotes-r"></i></div>
+              <p>
+                I've been a member at FitPhysique for over a year now, and I
+                couldn't be happier with my experience. The range of classes
+                offered here is impressive - from high-energy cardio sessions to
+                relaxing yoga classes, there's something for everyone.
+              </p>
+              <h4>Sarah Johnson</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/client-2.jpg" alt="client" />
+              <div><i class="ri-double-quotes-r"></i></div>
+              <p>
+                The classes are always well-planned and engaging, and the
+                instructors do an excellent job of keeping us motivated
+                throughout. I'm so grateful to have found such a supportive and
+                inclusive gym.
+              </p>
+              <h4>Michael Wong</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/client-3.jpg" alt="client" />
+              <div><i class="ri-double-quotes-r"></i></div>
+              <p>
+                I've tried many gyms in the past, but none of them compare to
+                FitPhysique. From the moment I walked through the doors, I felt
+                welcomed and supported by the staff and fellow members alike.
+              </p>
+              <h4>Emily Davis</h4>
+            </div>
+          </div>
+       
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section> -->
+
+    <section class="blog" id="blog">
+      <div class="section__container blog__container">
+        <h2 class="section__header">BLOGS</h2>
+        <div class="blog__grid">
+          <div class="blog__card">
+            <img src="assets/blog-1.jpg" alt="blog" />
+            <a href="linkp.html">
+            <h4>Abastecendo seu corpo para um desempenho ideal</h4></a>
+          </div>
+          <div class="blog__card">
+            <img src="assets/blog-2.jpg" alt="blog" />
+            <a href="linkp.html">
+            <h4>Um guia para definir e alcançar metas de condicionamento físico</h4></a>
+          </div>
+          <div class="blog__card">
+            <img src="assets/blog-3.jpg" alt="blog" />
+            <a href="">
+            <h4>Dicas e técnicas para exercícios eficientes</h4></a>
+          </div>
+          <div class="blog__card">
+            <img src="assets/blog-4.jpg" alt="blog" />
+            <a href="">
+            <h4>Um guia para iniciantes para iniciar sua jornada</h4></a>
+          </div>
+        </div>
+        <div class="blog__btn">
+          <a href="">
+          <button class="btn btn__primary">VER TUDO</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container logo__banner">
+      <img src="assets/logo-ete.png" alt="banner" />
+     
+      <img src="assets/logo-unix.png" alt="banner" />
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#"><img src="assets/Black White Minimalist SImple Monogram Typography Logo_20241007_193743_0001.png" alt="logo" /></a>
+          </div>
+          <p>
+            Bem-vindo ao Unix Corp, onde acreditamos que cada jornada para
+            o condicionamento físico é único e fortalecedor.
+          </p>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-2-fill"></i></span>
+                Timbaúba, <br />Escola Técnica Estadual Miguel Arraes de Alencar
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span>
+                4002-8922
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-mail-fill"></i></span>
+                unixcorp7@hotmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+     
+     <!--   <div class="footer__col">
+          <h4>GALLERY</h4>
+          <div class="gallery__grid">
+            <img src="assets/gallery-1.jpg" alt="gallery" />
+            <img src="assets/gallery-2.jpg" alt="gallery" />
+            <img src="assets/gallery-3.jpg" alt="gallery" />
+            <img src="assets/gallery-4.jpg" alt="gallery" />
+            <img src="assets/gallery-5.jpg" alt="gallery" />
+            <img src="assets/gallery-6.jpg" alt="gallery" />
+            <img src="assets/gallery-7.jpg" alt="gallery" />
+            <img src="assets/gallery-8.jpg" alt="gallery" />
+            <img src="assets/gallery-9.jpg" alt="gallery" />
+          </div>
+        </div>-->
+        <div style="width: 100%; height: 500px; padding: 10px;">
+          <h2 style="color: white; font-family: League spartan, sans-serif;">Onde estamos localizado?</h2>
+          <!--
+           <iframe>   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.9196220619363!2d144.956054!3d-37.817213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1f46f0f%3A0x5045675218ce7e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sau!4v1616362902753!5m2!1sen!2sau"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy">
+          </iframe> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.662423082234!2d-35.301630125798134!3d-7.502469374004831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac7f340e842de9%3A0xef663a8b7533e32e!2sEscola%20T%C3%A9cnica%20Estadual%20Miguel%20Arraes%20de%20Alencar!5e0!3m2!1spt-BR!2sbr!4v1730509354149!5m2!1spt-BR!2sbr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
+      </div>
+      
+        <div class="footer__col">
+          <h4>Informativo</h4>
+          <p>
+            Não perca as últimas novidades e ofertas - inscreva-se hoje e
+            junte-se à nossa próspera comunidade de fitness!
+          </p>
+          <form action="/">
+            <input type="text" placeholder="Enter Email" />
+            <button class="btn btn__primary">SEND</button>
+          </form>
+          <div class="footer__socials">
+            <a href="https://www.whatsapp.com/channel/0029VayM197002T9XJByK326"><i class="ri-whatsapp-fill"></i></a>
+            <a href="https://www.instagram.com/corp.fitlife/"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+       © 2024 Unix Corp. Todos os direitos reservados.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
